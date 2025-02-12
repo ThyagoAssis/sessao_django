@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from sessao.views import home, solicitar_dados, encerrar_sessao
 
-urlpatterns = [
+urlpatterns = [    
     path('admin/', admin.site.urls),
 
     #pagina home da aplicação
