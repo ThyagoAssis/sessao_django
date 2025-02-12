@@ -1,0 +1,5 @@
+
+<h1>Página inicial</h1>
+{% if request.session.nome_usuario %}
+<p>Olá, {{ request.session.nome_usuario }}! <a href="{% url 'encerra' %}" class="text-info ms-3">Sair</a></p>
+{% endif %}
