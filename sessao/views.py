@@ -9,11 +9,12 @@ def home(request):
         return render(request,'home.html')
        
 
-
+#Cria as sessoes
 def solicitar_dados(request):
-
     #Verifica se clicou no botao do formulario
     if request.method == "POST":
+
+        #captura os dados do formulario e guarda em um varivavel
         nome_usuario = request.POST.get("nome_usuario")
         email = request.POST.get("email")
         
